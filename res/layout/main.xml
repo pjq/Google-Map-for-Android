@@ -19,10 +19,12 @@
 			android:textSize="10sp">
 		</Button>
 		<Button android:id="@+id/trafficButton" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:text="Traffic">
+			android:layout_height="wrap_content" android:text="Traffic"
+			android:textSize="10sp">
 		</Button>
 		<Button android:id="@+id/streetButton" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:text="Street">
+			android:layout_height="wrap_content" android:text="Street"
+			android:textSize="10sp">
 		</Button>
 	</LinearLayout>
 	<LinearLayout android:id="@+id/widget34"
@@ -30,9 +32,9 @@
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		android:orientation="vertical">
 		<com.google.android.maps.MapView
-			android:id="@+id/mapView2" android:layout_width="fill_parent"
+			android:id="@+id/mapView" android:layout_width="fill_parent"
 			android:layout_height="fill_parent" android:enabled="true"
-			android:clickable="true" android:apiKey="0HKNVk1jSOL0lRbBlSG9TeD0jFYewkoHayW7fcQ" />
+			android:clickable="true" android:apiKey="0HKNVk1jSOL0PpK0P63JvWWg5g4KQpRy7YioVwg" />
 
 	</LinearLayout>
 </LinearLayout>

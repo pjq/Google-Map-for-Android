@@ -14,7 +14,7 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int mapView2=0x7f050008;
+        public static final int mapView=0x7f050008;
         public static final int satelliteButton=0x7f050004;
         public static final int streetButton=0x7f050006;
         public static final int trafficButton=0x7f050005;

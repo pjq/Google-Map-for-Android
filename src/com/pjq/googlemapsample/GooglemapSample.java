@@ -18,7 +18,6 @@ public class GooglemapSample extends MapActivity implements OnClickListener
 {
 	/** Called when the activity is first created. */
 	private MapView			mapView;
-	private MapView			mapView2;
 	private Button			zoomInButton;
 	private Button			zoomOutButton;
 	private Button			streetButton;
@@ -36,22 +35,27 @@ public class GooglemapSample extends MapActivity implements OnClickListener
 		setContentView(R.layout.main);
 
 	
-		mapView2 = (MapView) findViewById(R.id.mapView2);
+		mapView = (MapView) findViewById(R.id.mapView);
 		zoomInButton = (Button) findViewById(R.id.zoomInButton);
 		zoomOutButton = (Button) findViewById(R.id.zoomOutButton);
 		streetButton = (Button) findViewById(R.id.streetButton);
 		trafficButton = (Button) findViewById(R.id.trafficButton);
-		satelliteButton = (Button) findViewById(R.id.satelliteButton);
+		satelliteButton = (Button) findViewById(R.id.satelliteButton);  
+		
+		zoomInButton.setOnClickListener(this);
+		zoomOutButton.setOnClickListener(this);
+		streetButton.setOnClickListener(this);
+		trafficButton.setOnClickListener(this);
+		satelliteButton.setOnClickListener(this);
 			
-
-
-		mapController = mapView2.getController();
+		mapController = mapView.getController();
+		mapView.setVisibility(0);
 	//	mapView.setSatellite(true);
 
 		//hangzhou
-		gp = new GeoPoint((int) (30.27 * 1000000), (int) (120.16 * 1000000));
+		//gp = new GeoPoint((int) (30.27 * 1000000), (int) (120.16 * 1000000));
 		//mapController.animateTo(gp);
-		mapController.setCenter(gp);
+		//mapController.setCenter(gp);
 		//mapController.setZoom(DEFAULT_ZOOM_LEVEL);
 	
 
@@ -73,26 +77,26 @@ public class GooglemapSample extends MapActivity implements OnClickListener
 		switch (id)
 		{
 		case R.id.zoomInButton:
-			mapController.setZoom(mapView2.getZoomLevel() - 1);
+			mapController.setZoom(mapView.getZoomLevel() - 1);
 
 			break;
 		case R.id.zoomOutButton:
-			mapController.setZoom(mapView2.getZoomLevel() + 1);
+			mapController.setZoom(mapView.getZoomLevel() + 1);
 			break;
 		case R.id.streetButton:
-			mapView2.setStreetView(true);
-			mapView2.setSatellite(false);
-			mapView2.setTraffic(false);
+			mapView.setStreetView(true);
+			mapView.setSatellite(false);
+			mapView.setTraffic(false);
 			break;
 		case R.id.trafficButton:
-			mapView2.setStreetView(false);
-			mapView2.setSatellite(false);
-			mapView2.setTraffic(true);
+			mapView.setStreetView(false);
+			mapView.setSatellite(false);
+			mapView.setTraffic(true);
 			break;
 		case R.id.satelliteButton:
-			mapView2.setStreetView(false);
-			mapView2.setSatellite(true);
-			mapView2.setTraffic(false);
+			mapView.setStreetView(false);
+			mapView.setSatellite(true);
+			mapView.setTraffic(false);
 			break;
 
 		default:
