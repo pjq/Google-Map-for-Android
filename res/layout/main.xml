@@ -30,9 +30,9 @@
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		android:orientation="vertical">
 		<com.google.android.maps.MapView
-		android:id="@+id/mapView2"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:apiKey="0HKNVk1jSOL0lRbBlSG9TeD0jFYewkoHayW7fcQ" />
+			android:id="@+id/mapView2" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:enabled="true"
+			android:clickable="true" android:apiKey="0HKNVk1jSOL0lRbBlSG9TeD0jFYewkoHayW7fcQ" />
 
 	</LinearLayout>
 </LinearLayout>

@@ -27,7 +27,7 @@ public class GooglemapSample extends MapActivity implements OnClickListener
 
 	private MapController	mapController;
 	private GeoPoint		gp;
-	private Address    address;  
+	private Address    address;    
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
