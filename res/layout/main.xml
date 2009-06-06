@@ -32,7 +32,7 @@
 		<com.google.android.maps.MapView
 		android:id="@+id/mapView2"
 			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:apiKey="0HKNVk1jSOL0VRkbvFBp3PdbuXjsWk8ctcWbm3Q" />
+			android:apiKey="0HKNVk1jSOL0lRbBlSG9TeD0jFYewkoHayW7fcQ" />
 
 	</LinearLayout>
 </LinearLayout>
